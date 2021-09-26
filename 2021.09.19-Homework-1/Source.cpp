@@ -4,14 +4,36 @@ using namespace std;
 
 int main()
 {
-	int x = 0;
+	int h1 = 0;
 
-	cin >> x;
+	int m1 = 0;
 
-	int x2 = x * x;
+	int s1 = 0;
 
-	cout << (x2 + x + 1) * x + x + 1;
+	cin >> h1;
 
-	return EXIT_SUCCESS;
+	cin >> m1;
+
+	cin >> s1;
+
+	int sec1 = s1 + m1 * 60 + h1 * 3600;
+
+	int h2 = 0;
+
+	int m2 = 0;
+
+	int s2 = 0;
+
+	cin >> h2;
+
+	cin >> m2;
+
+	cin >> s2;
+
+	int sec2 = s2 + m2 * 60 + h2 * 3600;
+
+	cout << sec2 - sec1 << endl;
+
+return  EXIT_SUCCESS;
 
 }
